@@ -5,20 +5,51 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 import "./App.css";
+
 
 function App() {
   return (
-    <div className="app">
+    <>
       <Navbar />
-      <About />
-      <Services />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+          <footer className="footer">
+
+          <p>© 2026 Premium Decor. All Rights Reserved.</p>
+            <p>
+               Follow us on Instagram: 
+         <a
+              href="https://www.instagram.com/Premium_Decor_Interiors/"
+             target="_blank"
+            rel="noopener noreferrer"
+            className="insta-link"
+    >
+           @Premium_Decor_Interiors
+    </a>
+  </p>
+
+</footer>
+    </>
   );
 }
 

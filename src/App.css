@@ -1,4 +1,6 @@
-/* ================= GLOBAL ================= */
+/* =============================
+   RESET
+============================= */
 
 *{
   margin:0;
@@ -6,389 +8,793 @@
   box-sizing:border-box;
   font-family:'Poppins',sans-serif;
 }
+/* ===== MOBILE SAFE — NO SIDE SCROLL ===== */
 
-html{
-  scroll-behavior:smooth;
+html, body {
+  width: 100%;
+  overflow-x: hidden;   /* ⭐ LEFT-RIGHT SCROLL BAND */
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* =============================
+   GLOBAL FOOTER — PAGE END
+============================= */
+
+.site-footer{
+  width:100%;
+  background:#0f0f0f;
+  color:#fff;
+
+  padding:28px 20px;
+  text-align:center;
+  font-size:15px;
+  line-height:1.7;
+
+  margin-top:80px;
+}
+
+/* Instagram highlight */
+
+.site-footer span{
+  color:#f5c26b;   /* Gold */
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.site-footer span:hover{
+  color:#ffffff;
+}
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.insta-link {
+  color: goldenrod;   /* brand goldenrod */
+  font-weight: bold;
+  text-decoration: none;
   
 }
 
+.insta-link:hover {
+  text-decoration: underline;
+}
 body{
-  background:linear-gradient(135deg,#fff6ef,#ffe3d4);
+  background:#f6efe9;
   color:#333;
-  line-height:1.6;
 }
 
-/* Smooth Fade Animation */
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(40px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-section{
-  padding:110px 10%;
-  animation:fadeUp 1s ease forwards;
-}
-
-section h2{
-  text-align:center;
-  font-size:40px;
-  margin-bottom:70px;
-  color:#e76f2e;
-  transition:0.3s;
-}
-
-section h2:hover{
-  transform:scale(1.05);
-  letter-spacing:1px;
-}
-
-/* ================= NAVBAR ================= */
+/* =============================
+   NAVBAR — PREMIUM BUSINESS
+============================= */
 
 .navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 10%;
-  background:white;
   position:sticky;
   top:0;
   z-index:1000;
-  box-shadow:0 8px 25px rgba(0,0,0,0.06);
-}
-.logo-section h2{
-  color:#e76f2e;
-  font-size: 50px;
-  text-align: center;
-}
-.logo-section h2:hover{
-  color: #f4c430;
 
-}
-.nav-links{
   display:flex;
-  gap:30px;
-}
-
-.nav-links a{
-  text-decoration:none;
-  color:#333;
-  font-weight:600;
-  position:relative;
-  transition:0.3s;
-}
-
-/* Hover */
-.nav-links a:hover{
-  color:#e76f2e;
-}
-
-/* Active link */
-.nav-links a.active{
-  color:#e76f2e;
-}
-
-.nav-links a::after{
-  content:"";
-  position:absolute;
-  width:0%;
-  height:2px;
-  background:#e76f2e;
-  left:0;
-  bottom:-4px;
-  transition:0.3s;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after{
-  width:100%;
-}
-
-.btn{
-  background:#e76f2e;
-  padding:12px 24px;
-  border-radius:30px;
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.btn:hover{
-  background:#cf5e22;
-  transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(231,111,46,0.4);
-}
-
-/* ================= ABOUT ================= */
-
-.about-hero{
-  position:relative;
-  height:520px;
-  overflow:hidden;
-  border-radius:30px;
-}
-
-.about-hero img{
-  width:100%;
-  height:100%;
-
-  object-fit:cover;
-  transition:0.8s;
-}
-
-.about-hero:hover img{
-  transform:scale(1.08);
-}
-
-.about-overlay{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.55);
-  display:flex;
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
+
+  padding:16px 6%;
+  background:#fff;
+  box-shadow:0 6px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 50px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* ===== LOGO ===== */
+
+.logo-section img {
+  height: 80px;     /* logo vadda */
+  width: auto;
+  cursor: pointer;
+}
+
+/* ===== NAV LINKS ===== */
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Bold + base style */
+
+.nav-links a {
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Hover → orange */
+
+.nav-links a:hover {
+  color: #e56a2e;
+}
+
+/* Underline animation */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e56a2e;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Click active */
+
+.nav-links a:active {
+  color: #e56a2e;
+}
+
+/* ===== RIGHT BUTTON ===== */
+
+.btn {
+  background: #e56a2e;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #cf5a21;
+}
+
+/* =============================
+   SECTION GENERAL
+============================= */
+
+.section{
+  padding:80px 0;
+}
+
+.section h2{
   text-align:center;
-  padding:40px;
+  font-size:36px;
+  margin-bottom:50px;
+  color:#e6732f;
 }
 
-.about-text{
-  max-width:850px;
-  color:white;
+/* =============================
+   ABOUT — PROFESSIONAL LAYOUT
+============================= */
+
+.about-section{
+  background:#d9c4b3;
+  padding:55px 6%;
 }
 
-.about-text h2{ 
+/* TOP AREA */
+
+.about-top{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  margin-bottom:40px;
+}
+
+/* IMAGE */
+
+.about-image{
+  flex:0 0 520px;
+}
+
+.about-image img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  border-radius:30px;
+  box-shadow:0 40px 90px rgba(0,0,0,0.2);
+}
+.about-image:hover img {
+  transform: scale(1.08);
+}
+
+/* TEXT */
+
+.about-content{
+  flex:1;
+  max-width:620px;
+}
+
+.about-content h2{
   font-size:48px;
-  margin-bottom:25px;
-  color:#f4c430;
+  color:#e6732f;
+  margin-bottom:20px;
+  font-weight:900;
+  line-height:1.2;
 }
-.about-text h2:hover{
-    color:#e76f2e;
+.about-content h2:hover{
+  color: goldenrod;
 }
-.about-text p{
+
+.about-content p{
   font-size:18px;
+  line-height:1.8;
+  color:#3a3a3a;
 }
 
-/* ================= EXPERTISE HERO (FIXED POSITION) ================= */
+/* FEATURES BELOW */
 
-.expertise-hero{
-  position:relative;
-  width:100%;
-  height:400px;
-  margin-bottom:80px;
-  border-radius:30px;
-  overflow:hidden;
-}
-
-.expertise-hero img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.expertise-overlay{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.55);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.expertise-overlay h2{
-  color:#f4c430;
-  font-size:42px;
-}
-
-/* ================= GRID ================= */
-
-.project-grid,
-.skill-grid{
+.about-features{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:50px;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
 }
 
-/* ================= CARDS ================= */
+/* CARD */
 
-.service-card,
-.project-card,
-.skill-card{
-  background:white;
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,0.08);
-  transition:0.4s ease;
-  text-align:center;
-  cursor:pointer;
+/* ===== FEATURE CARDS ===== */
+
+.feature {
+  background: #f3efea;
+  border-radius: 22px;
+  padding: 22px 18px;
+  text-align: center;
+
+  /* ⭐ NORMAL SHADOW — SOFT */
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
-.service-card:hover,
-.project-card:hover,
-.skill-card:hover{
-  transform:translateY(-12px);
-  box-shadow:0 30px 65px rgba(0,0,0,0.15);
+
+/* ⭐ HOVER — LIFT + STRONG SHADOW */
+
+.feature:hover {
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.20),
+    0 15px 12px rgba(0, 0, 0, 0.20);
 }
 
-.service-card img,
-.project-card img,
-.skill-card img{
-  width:100%;
-  height:260px;
-  object-fit:cover;
-  transition:0.6s;
-}
+/* ICON */
 
-.service-card:hover img,
-.project-card:hover img,
-.skill-card:hover img{
-  transform:scale(1.1);
-}
-
-/* ================= PROJECT OVERLAY ================= */
-
-.project-card{
-  position:relative;
-}
-
-.project-overlay{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.65);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  color:white;
-  padding:20px;
-  opacity:0;
-  transition:0.4s ease;
-}
-
-.project-card:hover .project-overlay{
-  opacity:1;
-}
-
-.project-overlay h3{
-  font-size:22px;
-  margin-bottom:10px;
-  color:#f4c430;
-}
-/* ================= CONTACT ================= */
-
-.contact-form{
-  max-width:650px;
-  margin:auto;
-  background:white;
-  padding:60px;
-  border-radius:30px;
-  box-shadow:0 25px 55px rgba(0,0,0,0.08);
-}
-
-.form-group{
-  margin-bottom:25px;
-}
-
-.form-group label{
-  font-weight:600;
-  color:#e76f2e;
+.feature span{
+  font-size:36px;
   display:block;
+  margin-bottom:12px;
+}
+
+/* TITLE */
+
+.feature h4{
+  color:#e26d2f;
+  font-size:20px;
+  font-weight:800;
   margin-bottom:8px;
 }
+
+/* TEXT */
+
+.feature p{
+  font-size:15px;
+  color:#444;
+  line-height:1.6;
+}
+
+/* =============================
+   SERVICES / PROJECTS / EXPERTISE
+   CARDS GRID
+============================= */
+ #services {
+  background: #f6efe9;
+  padding: 40px 0;
+  position: relative
+};
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+#services h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #e26d2f;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+#services h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #e26d2f;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+.cards-grid{
+  width:90%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+/* =============================
+   OUR EXPERTISE (SKILLS) TEXT STYLE
+============================= */
+#skills {
+  background: #f6efe9;
+  padding: 5px 0;
+  position: relative
+};
+
+#skills h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #e26d2f;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+/* UNDERLINE SAME AS SERVICES */
+
+#skills h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #e26d2f;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* TEXT BELOW IMAGE */
+
+.expertise-text {
+  padding: 14px 18px 18px;
+  font-weight: bold;
+}
+
+.expertise-text h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #333;
+}
+.expertise-text p {
+  font-size: 15px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* CARD */
+
+.card{
+  background:#fff;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(0,0,0,0.12);
+  transition:.35s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 28px 65px rgba(0,0,0,0.22);
+}
+
+/* IMAGE SAME SIZE */
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
+
+/* BOTTOM TITLE BAR */
+
+.card-caption{
+  background :#e36f2c;
+  color:#fff;
+  padding:16px;
+  font-size:18px;
+  font-weight:600;
+  text-align:left;
+}
+/* PROJECTS + SERVICES GRID */
+
+#projects {
+  padding-top: 1px;  
+  padding-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+/* CARD */
+.project-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.project-card img {
+  width: 0%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* BOTTOM COLOR BAR */
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #e26d2f;
+  color: #fff;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* SECTION TITLE */
+
+/* GRID */
+
+
+/* CARD */
+
+.project-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+/* IMAGE */
+
+.project-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+#projects h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #e26d2f;
+  margin-bottom: 40px;
+}
+
+/* ORANGE TITLE BAR */
+
+.title-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #e26d2f;
+  color: #fff;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* CENTER TEXT ON HOVER — PROJECTS + EXPERTISE */
+
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  color: white;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  text-align: center;        /* text center */
+
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+/* TITLE CENTER */
+
+.hover-overlay h3 {
+  color: #f5c26b;      /* gold */
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* DESCRIPTION CENTER */
+
+.hover-overlay p {
+  color: #f2f2f2;
+  max-width: 80%;
+}
+/* SHOW ON HOVER */
+
+.project-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.project-card:hover .title-bar {
+  opacity: 0;
+}
+
+/* TEXT STYLE */
+
+.hover-overlay h3 {
+  color: #f5c26b;        /* Gold */
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.hover-overlay p {
+  color: #f2f2f2;
+}
+/* UNDERLINE SAME AS PROJECTS */
+
+#projects h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #e26d2f;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* SECTION TITLE */
+/* Section Heading Style (Services & Projects dono lai) */
+
+.section-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  color: #e56b2e;   /* Premium orange */
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Underline */
+.section-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #e56b2e;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+
+/* =============================
+   CONTACT — FINAL PREMIUM CARD
+   (Nothing else changes)
+============================= */
+
+/* SECTION BG */
+
+.contact-section{
+  background:#f6efe9;
+  padding:80px 0;
+  text-align:center;
+}
+
+/* HEADING */
+
+#contact h2{
+  font-size:40px;
+  font-weight:800;
+  color:#e26d2f;
+  margin-bottom:40px;
+  position:relative;
+}
+
+#contact h2::after{
+  content:"";
+  width:80px;
+  height:4px;
+  background:#e26d2f;
+  display:block;
+  margin:12px auto 0;
+  border-radius:3px;
+}
+
+/* ⭐ MAIN CARD — CENTER + BIGGER */
+
+.contact-box{
+  background:#ffffff;
+  width:560px;                 /* 🔥 Bigger width */
+  margin:50px auto;            /* 🔥 Perfect center */
+  padding:50px 45px;
+
+  border-radius:26px;
+
+  /* Soft premium shadow */
+  box-shadow:0 30px 80px rgba(0,0,0,0.12);
+
+  transition:.3s;
+}
+
+.contact-box:hover{
+  transform:translateY(-6px);
+  box-shadow:0 40px 100px rgba(0,0,0,0.18);
+}
+
+/* FORM GROUP */
+
+.form-group{
+  margin-bottom:22px;
+  text-align:left;
+}
+
+/* ⭐ LABEL TEXT — COLOR + BOLD */
+
+.form-group label{
+  display:block;
+  font-size:16px;
+  font-weight:700;            /* 🔥 Bold */
+  color:#e26d2f;              /* 🔥 Premium orange */
+  margin-bottom:8px;
+}
+
+/* ⭐ INPUT BOXES — DARK NORMAL */
+
+/* ⭐ CLEAN WHITE INPUT BOXES — OUTLINE ONLY */
 
 .form-group input,
 .form-group textarea{
   width:100%;
-  padding:15px;
-  border-radius:15px;
-  border:1px solid #ddd;
+  padding:16px 18px;
+  border-radius:14px;
+
+  background:#ffffff;        /* ✅ Pure white */
+  border:2px solid #e26d2f;  /* ✅ Orange outline */
+
+  font-size:16px;
   outline:none;
-  transition:0.3s;
-  font-size:15px;
+  transition:.25s;
+
+  /* Light soft shadow */
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
+
+/* ⭐ HOVER */
+
+.form-group input:hover,
+.form-group textarea:hover{
+  border-color:#cc5f21;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ⭐ FOCUS (Typing) */
 
 .form-group input:focus,
 .form-group textarea:focus{
-  border-color:#e76f2e;
-  box-shadow:0 0 12px rgba(231,111,46,0.2);
+  border-color:#e26d2f;
+
+  box-shadow:0 0 0 3px rgba(226,109,47,0.18),
+             0 14px 30px rgba(0,0,0,0.12);
 }
+
+/* ⭐ SEND BUTTON */
 
 .contact-btn{
   width:100%;
-  padding:15px;
-  background:#e76f2e;
+  background:#e26d2f;
+  color:#fff;
   border:none;
-  border-radius:30px;
-  color:white;
-  font-weight:600;
+  padding:16px;
+  border-radius:40px;
+
+  font-size:18px;
+  font-weight:700;
+
   cursor:pointer;
-  transition:0.3s;
-  font-size:16px;
+  transition:.3s;
+
+  /* Soft premium shadow */
+  box-shadow:0 12px 30px rgba(226,109,47,0.35);
 }
 
 .contact-btn:hover{
-  background:#cf5e22;
+  background:#cc5f21;
   transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(231,111,46,0.4);
+  box-shadow:0 18px 45px rgba(226,109,47,0.55);
 }
+/* =============================
+   FOOTER
+============================= */
 
-/* ================= FOOTER ================= */
-
-footer{
+.footer{
   background:#111;
-  color:white;
-  padding:35px;
+  color:#fff;
   text-align:center;
-  margin-top:80px;
+  padding:25px 0;
+  font-size:14px;
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media(max-width:1024px){
-  .project-grid,
-  .skill-grid{
+
+  .cards-grid,
+  .project-grid{
     grid-template-columns:repeat(2,1fr);
   }
+
+  .about-container{
+    flex-direction:column;
+  }
+
 }
 
 @media(max-width:768px){
-  .navbar{
-    flex-direction:column;
-    gap:15px;
-  }
 
   .nav-links{
     flex-wrap:wrap;
     justify-content:center;
   }
 
-  .project-grid,
-  .skill-grid{
+  .cards-grid,
+  .project-grid{
     grid-template-columns:1fr;
   }
 
-  .about-text h2{
-    font-size:32px;
+  .contact-box{
+    width:90%;
   }
 
-  .about-text p{
-    font-size:16px;
+  .about-image img{
+    width:100%;
   }
+
 }

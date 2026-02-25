@@ -20,7 +20,6 @@ import p19 from "../assets/projects/project19.jpg";
 import p20 from "../assets/projects/project20.jpg";
 import p21 from "../assets/projects/project21.jpg";
 
-
 export default function Projects() {
 
   const projects = [
@@ -45,25 +44,34 @@ export default function Projects() {
     { img: p19, title: "Project 19", desc: "Premium blinds & textures." },
     { img: p20, title: "Project 20", desc: "Complete home transformation." },
     { img: p21, title: "Project 21", desc: "Luxury modern living interior." },
-
   ];
 
   return (
-    <section id="projects">
+    <section id="projects" className="section light">
+
       <h2>Our Projects</h2>
 
       <div className="project-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
+
             <img src={project.img} alt={project.title} />
 
-            <div className="project-overlay">
+            {/* NORMAL TITLE BAR */}
+            <div className="title-bar">
+              {project.title}
+            </div>
+
+            {/* HOVER OVERLAY */}
+            <div className="hover-overlay">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
             </div>
+
           </div>
         ))}
       </div>
+
     </section>
   );
 }

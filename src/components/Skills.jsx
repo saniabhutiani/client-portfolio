@@ -22,27 +22,37 @@ export default function Skills() {
     { title: "Wallpaper Design", desc: "Creative wall styling.", img: wallpaper },
     { title: "Wall Styling", desc: "Premium wall textures.", img: styling },
 
-    /* ✅ New Added Image as Card */
+    /*  New Added Image as Card */
     { title: "Luxury Interior", desc: "Premium elegant living concept.", img: expertiseImg },
   ];
 
-  return (
-    <section id="skills" className="section">
+ return (
+  <section id="skills" className="section">
 
-      <h2>Our Expertise</h2>
+    <h2><b>Our Expertise</b></h2>
 
-      <div className="project-grid">
-        {expertise.map((item, index) => (
-          <div key={index} className="project-card">
-            <img src={item.img} alt={item.title} />
-            <div className="project-overlay">
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
+    <div className="project-grid">
+      {expertise.map((item, index) => (
+        <div key={index} className="project-card">
+
+          <img src={item.img} alt={item.title} />
+
+          {/* SAME HOVER STYLE AS PROJECTS */}
+          <div className="hover-overlay">
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
           </div>
-        ))}
-      </div>
 
-    </section>
-  );
+          {/* BOTTOM TITLE BAR */}
+          <div className="title-bar">
+            {item.title}
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+  </section>
+ );
+
 }

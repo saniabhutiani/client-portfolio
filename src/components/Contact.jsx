@@ -40,14 +40,13 @@ https://yourwebsite.com/#contact
 Kindly review and respond to the client at the earliest.
 `;
 
-    // 👉 WhatsApp number
-    const ownerNumber = "91 9877049550";
+    const ownerNumber = "919877049550"; // ❗ no spaces
 
     const url = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(text)}`;
 
     window.open(url, "_blank");
 
-    alert(" Thank you for contacting Premium Decor Interiors. We have received your inquiry. Kindly confirm your details and our team will contact you shortly.");
+    alert("Thank you for contacting Premium Decor Interiors. Our team will contact you shortly.");
 
     setFormData({
       name: "",
@@ -58,11 +57,12 @@ Kindly review and respond to the client at the earliest.
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
 
-      <h2>Contact Premium Decor</h2>
+      <h2>Contact Us</h2>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      {/* ⭐ PREMIUM CARD */}
+      <form className="contact-box" onSubmit={handleSubmit}>
 
         <div className="form-group">
           <label>Your Name</label>
