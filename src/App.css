@@ -785,13 +785,7 @@ body{
   .nav-links{
     flex-wrap:wrap;
     justify-content:center;
-    display: none; 
-  }
-  .btn{
-    display: none;
-  }
- .logo-section img {
-    height: 45px;
+     
   }
  .cards-grid,
   .project-grid{
