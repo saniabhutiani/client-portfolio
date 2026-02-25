@@ -1,7 +1,6 @@
 /* =============================
    RESET
 ============================= */
-
 *{
   margin:0;
   padding:0;
@@ -10,9 +9,13 @@
 }
 /* ===== MOBILE SAFE — NO SIDE SCROLL ===== */
 
-html, body {
+html,body {
   width: 100%;
-  overflow-x: hidden;   /* ⭐ LEFT-RIGHT SCROLL BAND */
+  overflow-x: hidden;   /* LEFT-RIGHT SCROLL BAND */
+  
+}
+html {
+       scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -75,17 +78,16 @@ body{
 ============================= */
 
 .navbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  padding:16px 6%;
-  background:#fff;
-  box-shadow:0 6px 25px rgba(0,0,0,0.08);
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 }
 
 /* ===== NAVBAR ===== */
@@ -115,6 +117,7 @@ body{
 .nav-links {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 /* Bold + base style */
@@ -782,9 +785,15 @@ body{
   .nav-links{
     flex-wrap:wrap;
     justify-content:center;
+    display: none; 
   }
-
-  .cards-grid,
+  .btn{
+    display: none;
+  }
+ .logo-section img {
+    height: 45px;
+  }
+ .cards-grid,
   .project-grid{
     grid-template-columns:1fr;
   }
