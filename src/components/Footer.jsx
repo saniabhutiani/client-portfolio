@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <p>© 2026 Premium Decor. All Rights Reserved.</p>
+      <p>© 2022 Premium Decor. All Rights Reserved.</p>
       <p>
         Follow us on Instagram: 
         <a 

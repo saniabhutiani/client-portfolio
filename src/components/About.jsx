@@ -34,7 +34,7 @@ export default function About() {
 
         <div className="feature">
           <span>🏆</span>
-          <h4>10+ Years Experience</h4>
+          <h4>5+ Years Experience</h4>
           <p>Delivering premium interior solutions with proven expertise.</p>
         </div>
 
