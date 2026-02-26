@@ -828,6 +828,11 @@ img {
     width: 100%;
     height: auto;
     border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .about-cards{
+    margin-top: 10px;
   }
 
   .about-content{
