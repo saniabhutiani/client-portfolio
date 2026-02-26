@@ -803,45 +803,33 @@ img {
 /* ============================= */
 
 @media (max-width:768px){
-
-  /* LOGO TOP — NAVLINKS BELOW */
+ /* LOGO TOP — NAVLINKS BELOW */
   .navbar{
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
-
-  .logo-section{
+.logo-section{
     margin-bottom: 8px;
   }
-
-  .logo-section img{
+.logo-section img{
     height: 70px;
   }
-
-  .nav-links{
+ .nav-links{
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
   }
-@media (max-width:768px){
-
-  /* SECTION */
-  .about-section{
+ /* SECTION */ 
+ .about-section{
     padding: 20px 15px !important;
     margin: 0 !important;
   }
 
-  /* TOP LAYOUT */
-  .about-top{
-    flex-direction: column;
-    align-items: flex-start;   /* center hatao */
-    gap: 15px;
-  }
-
-  /* IMAGE */
+  /* 🔥 MAIN FIX — remove 520px width */
   .about-image{
+    flex: unset;
     width: 100%;
   }
 
@@ -852,38 +840,45 @@ img {
     border-radius: 20px;
   }
 
-  /* CONTENT */
+  .about-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+
   .about-content{
-    width: 100%;
+    max-width: 100%;
   }
 
   .about-content h2{
     font-size: 26px;
-    margin: 12px 0 8px;
+    margin-bottom: 10px;
   }
 
   .about-content p{
     font-size: 15px;
     line-height: 1.6;
-    margin: 0;
   }
 
-  /* SMALL BADGES (✔ icons wali line) */
-  .about-badges{
-    display: grid;
+  /* ✔ HIGHLIGHT BOXES — 2 per row */
+  .about-highlights{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     margin: 10px 0;
   }
 
-  /* 🔥 MAIN FIX — CARDS SAME AS BEFORE */
-  .about-features{
-    grid-template-columns: repeat(2,1fr) !important;
-    gap: 15px;
-    margin-top: 15px;
+  .highlight-box{
+    font-size: 13px;
+    padding: 8px;
   }
 
-}
+  /*  FEATURE CARDS — SAME AS BEFORE */
+  .about-features{
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top: 18px;
+  }
 
 .contact-box{
     width: 92%;
@@ -891,6 +886,6 @@ img {
 }
 .contact-box h2{
     text-align: center;
-  }
+}
 
 }
