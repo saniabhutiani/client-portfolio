@@ -257,6 +257,23 @@ body{
   grid-template-columns:repeat(4,1fr);
   gap:18px;
 }
+.about-highlights{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.highlight-box{
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e46a2e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
 
 /* CARD */
 
@@ -808,49 +825,49 @@ img {
     justify-content: center;
     gap: 12px;
   }
-.about-section{
-    padding: 10px 15px !important;   /* 🔥 Less top space */
+@media (max-width:768px){
+
+  .about-section{
+    padding: 20px 15px !important;
     margin: 0 !important;
   }
-.about-top{
+
+  /* 🔥 MAIN FIX — remove extra vertical space */
+  .about-top{
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 12px;       /* 🔥 Reduced gap */
-    margin: 0;
-  }
-.about-image{
-    width: 100%;
-    margin: 0;
-  }
-.about-image img{
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-    margin-bottom: 6px;   /* 🔥 Less space under image */
-  }
-.about-content{
-    width: 100%;
-  }
-.about-content h2{
-    font-size: 26px;
-    margin-bottom: 6px;   /* 🔥 Reduced */
-  }
-.about-content p{
-    font-size: 15px;
-    line-height: 1.6;
-  }
-/* ABOUT CARDS */
-  .about-cards{
-    margin-top: 8px;      /* 🔥 Reduced */
-  }
-/* FEATURES / SMALL CARDS VERTICAL */
-  .about-features{
-    grid-template-columns: 1fr;
-    gap: 14px;
+    align-items: flex-start;   /* ❌ center remove */
+    gap: 15px;                 /* gap reduce */
   }
 
+  .about-image{
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-image img{
+    width: 100%;
+    height: auto;
+    display: block;            /* remove bottom gap */
+    border-radius: 20px;
+  }
+
+  .about-content{
+    width: 100%;
+    margin-top: 0;             /* remove extra space */
+  }
+
+  .about-content h2{
+    font-size: 26px;
+    margin: 10px 0;
+  }
+
+  .about-content p{
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+}
 
 .contact-box{
     width: 92%;

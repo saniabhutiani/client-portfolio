@@ -15,6 +15,13 @@ export default function About() {
         <div className="about-content">
           <h2>About Premium Decor</h2>
 
+          <div className="about-highlights">
+             <div className="highlight-box">✔ 5+ Years Experience</div>
+            <div className="highlight-box">✔ 500+ Happy Clients</div>
+            <div className="highlight-box">✔ Premium Materials</div>
+             <div className="highlight-box">✔ On-Time Delivery</div>
+</div>
+
           <p>
             Premium Decor is a modern interior design studio dedicated to
             transforming ordinary spaces into elegant, functional, and
