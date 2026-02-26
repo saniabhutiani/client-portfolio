@@ -782,14 +782,6 @@ img {
   }
 }
 /* ============================= */
-/* 📱 MOBILE — PERFECT ABOUT FIX */
-/* ============================= */
-
-/* ============================= */
-/* 📱 MOBILE — ONLY TOP FIX */
-/* ============================= */
-
-/* ============================= */
 /* 📱 MOBILE — ABOUT ONLY FIX */
 /* ============================= */
 
@@ -854,22 +846,14 @@ img {
     grid-template-columns: 1fr;
     gap: 18px;
   }
-  /* MOBILE — phone screens */
-@media (max-width: 600px) {
+  .contact-box{
+    width: 92%;
+    padding: 16px;
 
-  .contact-form {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 12px;
-    box-sizing: border-box;
+  }
+  .contact-box h2{
+    text-align: center;
   }
 
-  .contact-form input,
-  .contact-form textarea {
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
-}
 
 }
