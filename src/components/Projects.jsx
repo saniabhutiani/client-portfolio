@@ -13,12 +13,7 @@ import p12 from "../assets/projects/project12.jpg";
 import p13 from "../assets/projects/project13.jpg";
 import p14 from "../assets/projects/project14.jpg";
 import p15 from "../assets/projects/project15.jpg";
-import p16 from "../assets/projects/project16.jpg";
-import p17 from "../assets/projects/project17.jpg";
-import p18 from "../assets/projects/project18.jpg";
-import p19 from "../assets/projects/project19.jpg";
-import p20 from "../assets/projects/project20.jpg";
-import p21 from "../assets/projects/project21.jpg";
+
 
 export default function Projects() {
 
@@ -38,12 +33,7 @@ export default function Projects() {
     { img: p13, title: "Project 13", desc: "Premium finishing interiors." },
     { img: p14, title: "Project 14", desc: "Stylish kitchen remodeling." },
     { img: p15, title: "Project 15", desc: "Minimal modern home design." },
-    { img: p16, title: "Project 16", desc: "Contemporary decor project." },
-    { img: p17, title: "Project 17", desc: "Elegant workspace interior." },
-    { img: p18, title: "Project 18", desc: "Luxury bedroom styling." },
-    { img: p19, title: "Project 19", desc: "Premium blinds & textures." },
-    { img: p20, title: "Project 20", desc: "Complete home transformation." },
-    { img: p21, title: "Project 21", desc: "Luxury modern living interior." },
+
   ];
 
   return (

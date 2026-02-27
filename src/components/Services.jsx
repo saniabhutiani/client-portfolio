@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import s1 from "../assets/skills/wallpaper2.jpg";
 import s2 from "../assets/skills/flooring.jpg";
 import s3 from "../assets/skills/falseceiling.jpg";
@@ -26,15 +24,15 @@ export default function Services() {
 
   return (
     <section id="services" className="section light">
-      <h2>Our Services</h2>
+      <h2><b>Our Services</b></h2>
 
       <div className="cards-grid">
         {services.map((service, index) => (
-          <div key={index} className="card">
+          <div key={index} className="service-card">
 
             <img src={service.img} alt={service.title} />
 
-            <div className="card-caption">
+            <div className="service-caption">
               {service.title}
             </div>
 

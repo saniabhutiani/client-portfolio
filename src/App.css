@@ -335,40 +335,56 @@ body{
    SERVICES / PROJECTS / EXPERTISE
    CARDS GRID
 ============================= */
- #services {
-  background: #f6efe9;
-  padding: 40px 0;
-  position: relative
-};
-.service-card {
+ .cards-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+
+.card{
+  border-radius: 22px;
+  overflow: hidden;
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  position: relative;
 }
-#services h2 {
-  font-size: 40px;
-  font-weight: 800;
-  color: #e26d2f;
-  text-align: center;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+
+.card:hover{
+  transform: translateY(-6px);
 }
-#services h2::after {
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: #e26d2f;
+
+/* IMAGE SIZE — SAME AS PROJECTS */
+
+.card img{
+  width: 100%;
+  height: 240px;      /* ⭐ SAME HEIGHT */
+  object-fit: cover;
   display: block;
-  margin: 12px auto 0;
-  border-radius: 2px;
 }
-.cards-grid{
-  width:90%;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+
+/* =====CENTER TEXT IN ORANGE BAR ===== */
+.card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #e46f2e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex !important;      /* ⭐ force flex */
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding: 0 !important;
 }
+
 /* =============================
    OUR EXPERTISE (SKILLS) TEXT STYLE
 ============================= */
@@ -442,24 +458,77 @@ body{
   object-fit: cover;   /* fill without distortion */
   border-radius: 18px;
 }
+/* ================================= */
+/* SERVICES — SAME AS PROJECTS */
+/* ================================= */
 
-/* BOTTOM TITLE BAR */
+#services .cards-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+}
 
-.card-caption{
-  background :#e36f2c;
+.service-card{
+  position:relative;
+  border-radius:22px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+}
+
+.service-card img{
+  width:100%;
+  height:230px;      /* SAME AS PROJECTS */
+  object-fit:cover;
+  display:block;
+}
+
+.service-caption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#e26d2f;
   color:#fff;
-  padding:16px;
+  padding:18px;
   font-size:18px;
   font-weight:600;
-  text-align:left;
+  border-bottom-left-radius:22px;
+  border-bottom-right-radius:22px;
 }
-/* PROJECTS + SERVICES GRID */
+/* OUR SERVICES — CENTERED UNDERLINE (NO SHIFT) */
 
+#services{
+  text-align: center;
+}
+
+#services h2{
+  position: relative;
+  display: inline-block;
+}
+
+#services h2::after{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e26d2f;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* PROJECTS + SERVICES GRID */
 #projects {
   padding-top: 1px;  
   padding-bottom: 40px;
 }
-
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -533,7 +602,24 @@ body{
   color: #e26d2f;
   margin-bottom: 40px;
 }
-
+/* TARGET ORANGE TEXT AREA INSIDE PROJECT CARDS */
+.project-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #e46f2e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* ⭐ CENTER */
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
 /* ORANGE TITLE BAR */
 
 .title-bar {
@@ -554,15 +640,12 @@ body{
   inset: 0;
   background: rgba(0,0,0,0.75);
   color: white;
-
   padding: 25px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;   /* vertical center */
   align-items: center;       /* horizontal center */
   text-align: center;        /* text center */
-
   opacity: 0;
   transition: 0.35s ease;
 }
@@ -990,31 +1073,40 @@ img {
     padding: 8px;
   }
 
-  /*  FEATURE CARDS — SAME AS BEFORE */
-  .about-features{
+
+/*  FEATURE CARDS — SAME AS BEFORE */
+.about-features{
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
     margin-top: 18px;
   }
-   .footer{
-    padding: 28px 18px 16px;
+#services .cards-grid{
+    grid-template-columns:1fr;
+    gap:18px;
   }
 
-  .footer-container{
+.service-card img{
+    height:200px;
+  }
+.service-caption{
+    font-size:16px;
+    padding:14px;
+  }
+.footer{
+    padding: 28px 18px 16px;
+  }
+.footer-container{
     gap: 25px;
     text-align: center;
   }
-
-  .footer-bottom-inside{
+.footer-bottom-inside{
     margin-top: 16px;
     padding-top: 12px;
   }
-
-  .social-icons a{
+.social-icons a{
     margin: 0 8px;
   }
-
-  .contact-box{
+.contact-box{
     width: 92%;
     padding: 16px;
 }

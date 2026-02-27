@@ -37,7 +37,7 @@ export default function Footer() {
           <h4>Contact Info</h4>
           <p>📍 Bathinda, Punjab</p>
           <p>📞 +91 9877049550</p>
-          <p>✉ premiumdecor@gmail.com</p>
+          <p>✉ premiumdecor0226@gmail.com</p>
         </div>
 
         {/* RIGHT — WHATSAPP CTA */}

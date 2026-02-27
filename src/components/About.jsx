@@ -17,7 +17,7 @@ export default function About() {
 
           <div className="about-highlights">
              <div className="highlight-box">✔ 5+ Years Experience</div>
-            <div className="highlight-box">✔ 500+ Happy Clients</div>
+            <div className="highlight-box">✔ 1000+Happy Clients</div>
             <div className="highlight-box">✔ Premium Materials</div>
              <div className="highlight-box">✔ On-Time Delivery</div>
 </div>
