@@ -6,8 +6,6 @@ import office1 from "../assets/skills/office1.jpg";
 import office2 from "../assets/skills/office2.jpg";
 import wallpaper from "../assets/skills/wall1.jpg";
 import styling from "../assets/skills/wall2.jpg";
-
-/* ✅ Add your new image here */
 import expertiseImg from "../assets/skills/wall3.jpg";
 
 export default function Skills() {
@@ -16,13 +14,11 @@ export default function Skills() {
     { title: "Bedroom Design", desc: "Elegant bedroom interiors.", img: bedroom1 },
     { title: "Modern Bedroom", desc: "Premium bedroom concepts.", img: bedroom2 },
     { title: "Modular Kitchen", desc: "Functional kitchen designs.", img: kitchen1 },
-    { title: "Contemporary Kitchen", desc: "Smart storage solutions.", img: kitchen2 },
+    { title: "Contemporary Kitchen", desc: "Smart storage solutions.", img: kitchen2},
     { title: "Office Interior", desc: "Professional office setup.", img: office1 },
     { title: "Corporate Office", desc: "Modern workspace interiors.", img: office2 },
     { title: "Wallpaper Design", desc: "Creative wall styling.", img: wallpaper },
     { title: "Wall Styling", desc: "Premium wall textures.", img: styling },
-
-    /*  New Added Image as Card */
     { title: "Luxury Interior", desc: "Premium elegant living concept.", img: expertiseImg },
   ];
 
