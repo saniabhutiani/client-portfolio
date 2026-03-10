@@ -18,20 +18,20 @@ import p15 from "../assets/projects/project15.jpg";
 export default function Projects() {
 
   const projects = [
-    { img: p1, title: "Project 1", desc: "Elegant modern interior concept." },
-    { img: p2, title: "Project 2", desc: "Luxury bedroom transformation." },
-    { img: p3, title: "Project 3", desc: "Premium modular kitchen setup." },
-    { img: p4, title: "Project 4", desc: "Stylish living room decor." },
-    { img: p5, title: "Project 5", desc: "Creative wall styling solution." },
-    { img: p6, title: "Project 6", desc: "Contemporary office interior." },
+    { img: p1, title: "Project 1", desc: "Elegant modern interior design." },
+    { img: p2, title: "Project 2", desc: "Luxury interior design." },
+    { img: p3, title: "Project 3", desc: "Stylish interior design." },
+    { img: p4, title: "Project 4", desc: "Premium modular interior setup." },
+    { img: p5, title: "Project 5", desc: "Creative modular kitchen styling solution." },
+    { img: p6, title: "Project 6", desc: "Contemporary interior design." },
     { img: p7, title: "Project 7", desc: "Modern ceiling design concept." },
     { img: p8, title: "Project 8", desc: "Luxury flooring installation." },
-    { img: p9, title: "Project 9", desc: "Premium home styling layout." },
-    { img: p10, title: "Project 10", desc: "Elegant space transformation." },
+    { img: p9, title: "Project 9", desc: "Premium design." },
+    { img: p10, title: "Project 10", desc: "Elegant home styling concept." },
     { img: p11, title: "Project 11", desc: "Luxury wall paneling design." },
     { img: p12, title: "Project 12", desc: "Modern lighting & decor theme." },
     { img: p13, title: "Project 13", desc: "Premium finishing interiors." },
-    { img: p14, title: "Project 14", desc: "Stylish kitchen remodeling." },
+    { img: p14, title: "Project 14", desc: "Luxury home renovation project." },
     { img: p15, title: "Project 15", desc: "Minimal modern home design." },
 
   ];

@@ -4,7 +4,9 @@ export default function Navbar() {
 
       {/* LEFT — LOGO */}
       <div className="logo-section">
-        <img src="/logo.png" alt="Premium Decor Logo" />
+        <a href="#home">
+          <img src="/logo.png" alt="Premium Decor Logo" />
+        </a>
       </div>
 
       {/* CENTER — LINKS */}
@@ -14,6 +16,7 @@ export default function Navbar() {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+
         <a
           href="https://www.instagram.com/premium_decor_interiors/"
           target="_blank"
