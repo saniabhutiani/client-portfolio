@@ -78,11 +78,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
+  padding: 5px 50px;
   background: #fff;
   box-sizing: border-box;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  position: fixed;
+  position: sticky;
+  flex-wrap: wrap;
   max-width: none;
   margin: 0;
   width: 100%;
@@ -92,7 +93,10 @@ body{
 }
 
 /* ===== LOGO ===== */
-
+.logo-section{
+  margin: 0;
+  padding: 0;
+}
 .logo-section img {
   height: 80px;     /* logo vadda */
   width: auto;
@@ -103,8 +107,12 @@ body{
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* Bold + base style */
@@ -158,6 +166,8 @@ body{
   font-weight: 700;
   text-decoration: none;
   transition: 0.3s;
+  margin:10px auto;
+  display: block;
 }
 
 .btn:hover {
@@ -182,27 +192,21 @@ body{
 /* =============================
    ABOUT — PROFESSIONAL LAYOUT
 ============================= */
-
 .about-section{
   background:#d9c4b3;
   padding:55px 6%;
 }
-
 /* TOP AREA */
-
 .about-top{
   display:flex;
   align-items:center;
   gap:40px;
   margin-bottom:40px;
 }
-
 /* IMAGE */
-
 .about-image{
   flex:0 0 520px;
 }
-
 .about-image img{
   width:100%;
   height:auto;
@@ -236,6 +240,12 @@ body{
   font-size:18px;
   line-height:1.8;
   color:#3a3a3a;
+}
+.about-container{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* FEATURES BELOW */
@@ -771,15 +781,12 @@ body{
 .form-group label{
   display:block;
   font-size:16px;
-  font-weight:700;            /* 🔥 Bold */
-  color:#e26d2f;              /* 🔥 Premium orange */
+  font-weight:700;            /*  Bold */
+  color:#e26d2f;              /*  Premium orange */
   margin-bottom:8px;
 }
 
-/* ⭐ INPUT BOXES — DARK NORMAL */
-
-/* ⭐ CLEAN WHITE INPUT BOXES — OUTLINE ONLY */
-
+/*  INPUT BOXES — DARK NORMAL */
 .form-group input,
 .form-group textarea{
   width:100%;
@@ -1022,6 +1029,7 @@ img {
     display: block;
     border-radius: 20px;
   }
+  
 
   .about-top{
     flex-direction: column;
@@ -1062,6 +1070,9 @@ img {
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
     margin-top: 18px;
+  }
+  .about-container{
+    flex-direction: column;
   }
 #services .cards-grid{
     grid-template-columns:1fr;
