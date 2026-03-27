@@ -6,21 +6,21 @@ import office1 from "../assets/skills/bedroom5.jpg";
 import office2 from "../assets/skills/bedroom6.jpg";
 import wallpaper from "../assets/skills/cupboard.jpg";
 import styling from "../assets/skills/bedroom8.jpg";
-import expertiseImg from "../assets/skills/bedroom9.jpg";
+import expertiseImg from "../assets/skills/elevation.jpg";
 import Office from "../assets/skills/office1.jpg";
 
 export default function Skills() {
 
   const expertise = [
   { title: "Bedroom Design", desc: "Elegant bedroom interiors.", img: bedroom1 },
-  { title: "Premium Design", desc: "Premium design concepts.", img: bedroom2 },
+  { title: "Premium Design", desc: "Premium wall design.", img: bedroom2 },
   { title: "Bedroom Interior Design", desc: "Functional bedroom designs.", img: bedroom3 },
   { title: "Bedroom Interior", desc: "Professional bedroom setup.", img: office1 },
   { title: "Bedroom Design", desc: "Modern workspace interiors.", img: office2 },
   { title: "Cupboard Design", desc: "Creative styling.", img: wallpaper },
   { title: "Wall Styling", desc: "Premium wall styling textures.", img: styling },
-  { title: "Interior Design", desc: "Premium elegant concept.", img: expertiseImg },
-  { title: "Office Design", desc: "Modern office storage solutions.", img: Office},
+  { title: "Interior Design", desc: "Premium front elevation design.", img: expertiseImg },
+  { title: "Office Design", desc: "Modern office solutions.", img: Office},
 ];
 
   return (

@@ -18,21 +18,21 @@ import p15 from "../assets/projects/project15.jpg";
 export default function Projects() {
 
   const projects = [
-    { img: p1, title: "Project 1", desc: "Elegant modern interior design." },
-    { img: p2, title: "Project 2", desc: "Luxury interior design." },
-    { img: p3, title: "Project 3", desc: "Stylish interior design." },
-    { img: p4, title: "Project 4", desc: "Premium modular interior setup." },
+    { img: p1, title: "Project 1", desc: "Modern false celling design." },
+    { img: p2, title: "Project 2", desc: "Luxury kitchen design." },
+    { img: p3, title: "Project 3", desc: "Modular kitchen design." },
+    { img: p4, title: "Project 4", desc: "Premium interior design." },
     { img: p5, title: "Project 5", desc: "Creative modular kitchen styling solution." },
-    { img: p6, title: "Project 6", desc: "Contemporary interior design." },
-    { img: p7, title: "Project 7", desc: "Modern ceiling design concept." },
-    { img: p8, title: "Project 8", desc: "Luxury flooring installation." },
-    { img: p9, title: "Project 9", desc: "Premium design." },
-    { img: p10, title: "Project 10", desc: "Elegant home styling concept." },
-    { img: p11, title: "Project 11", desc: "Luxury wall paneling design." },
+    { img: p6, title: "Project 6", desc: "Modern interior design." },
+    { img: p7, title: "Project 7", desc: "Modern dressing design." },
+    { img: p8, title: "Project 8", desc: "Modern door design." },
+    { img: p9, title: "Project 9", desc: "Elegant study design." },
+    { img: p10, title: "Project 10", desc: "Elegant sofa & wall design." },
+    { img: p11, title: "Project 11", desc: "Luxury modern bedroom design." },
     { img: p12, title: "Project 12", desc: "Modern lighting & decor theme." },
-    { img: p13, title: "Project 13", desc: "Premium finishing interiors." },
-    { img: p14, title: "Project 14", desc: "Luxury home renovation project." },
-    { img: p15, title: "Project 15", desc: "Minimal modern home design." },
+    { img: p13, title: "Project 13", desc: "Premium interior design." },
+    { img: p14, title: "Project 14", desc: "Luxury dressing design." },
+    { img: p15, title: "Project 15", desc: "Modern study design." },
 
   ];
 

@@ -4,7 +4,7 @@ import s3 from "../assets/skills/falseceiling.jpg";
 import s4 from "../assets/skills/blind.jpg";
 import s5 from "../assets/skills/artificalgarden.jpg";
 import s6 from "../assets/skills/singlehouse.jpg";
-import s7 from "../assets/skills/allivation.jpg";
+import s7 from "../assets/skills/newelevation.jpg";
 import s8 from "../assets/skills/bedroominterior.jpg";
 import s9 from "../assets/skills/stretchceiling.jpg";
 
@@ -17,7 +17,7 @@ export default function Services() {
     { img: s4, title: "Blinds" },
     { img: s5, title: "Artificial Garden" },
     { img: s6, title: "Shingles" },
-    { img: s7, title: "Allivation" },
+    { img: s7, title: "Elevation" },
     { img: s8, title: "Bedroom Interior" },
     { img: s9, title: "Stretch Ceiling" },
   ];
